@@ -1,0 +1,25 @@
+body {
+    background-color: black
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson
+}
+
+img {
+    padding: 5%;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#size {
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}

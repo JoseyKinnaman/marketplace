@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0171)https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed/form-input-types-742c7dbd-8ebd-4aed-b117-d1898a5fcf7d -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Form Input Types</title>
+
+<script type="text/javascript" src="./Form Input Types_files/48356a79ca"></script><script src="./Form Input Types_files/nr-1167.min.js"></script><script type="text/javascript" async="" src="./Form Input Types_files/loader.js"></script><script type="text/javascript" async="" src="./Form Input Types_files/aa1422f9-9ca9-4942-8b1c-830007020e3d.js"></script><script async="" src="./Form Input Types_files/analytics.js"></script><script src="./Form Input Types_files/Gy5a6AgvmvRZuSjIcKRIBTwX4nQ.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":0,"applicationTime":39,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"48356a79ca",applicationID:"1386295"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="yyA06uUtHXKTEobe7Wke8FNYX1X/hbdofkETWIo7hKgBDZI3gIeqstmqWnTlXvXOPSOZBo7evYFcrlUYtYlgwQ==">
+<link rel="stylesheet" media="all" href="./Form Input Types_files/application-74095f2d1adb3757b95eedacb3ca3e99de85bd1a5905700b945252f74fa1fb0e.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://www.learnhowtoprogram.com/assets/favicon-d0e8ff63da72a0c5ea15ebc045a7f9d2979d211a12e596a5ed5f5b1534e78919.png">
+<link href="./Form Input Types_files/css" rel="stylesheet" type="text/css">
+<script src="./Form Input Types_files/application-87ffa99e14cef3d1aa4b9b1b85f7e96ddea38bf6bcbb2c7edbca0d6ae2247439.js"></script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Thursday</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening">Intro to Programming (Evening)</a></li>
+<li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed"> JavaScript &amp; jQuery</a></li>
+<li class="active">Form Input Types</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed/form-input-types-742c7dbd-8ebd-4aed-b117-d1898a5fcf7d#text" data-toggle="tab">Text</a></li>
+<li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed/form-input-types-742c7dbd-8ebd-4aed-b117-d1898a5fcf7d#cheat-sheet" data-toggle="tab">Cheat sheet</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>We've already seen how to gather input from text fields, but there are a variety of other types of form fields as well: Select boxes, radio buttons and checkboxes are perhaps the most prominent.</p>
+<p>HTML5, finalized in 2014 and now widely supported, also introduced a number of additional input types, including date, color, email, tel, url, number, and many others. See the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN</a> for a full list of HTML input types. Bootstrap also has more information about them <a href="https://getbootstrap.com/css/#forms-controls">here</a>.</p>
+<p>Generally as you come across the need to gather input in a particular way, you'll do some research to figure out how to read input in that way. We'll introduce a few of the most common input field types. But first, a note of warning:</p>
+<h2>Always <code class="prettyprint prettyprinted" style=""><span class="pln">parseInt</span><span class="pun">()</span></code> Number Values</h2>
+<p>Just because you mark your HTML input field as <em>number</em>, <em>date</em>, or <em>tel</em>, don't expect it to come in as the JavaScript <strong>number</strong> type. Marking it in your html as <code class="prettyprint prettyprinted" style=""><span class="pln">type</span><span class="pun">=</span><span class="str">"number"</span></code> just means that the browser will do some preliminary checking to encourage the user to enter a number rather than some text. But when you use <code class="prettyprint prettyprinted" style=""><span class="pun">.</span><span class="pln">val</span><span class="pun">()</span></code> to read the input, it will still come in as a JavaScript <em>string</em>, not a <em>number</em>. The HTML input types mostly just help indicate to the user what type of input is expected and/or allow the user to more easily enter a value such as a date or color.</p>
+<h2>Select Boxes</h2>
+<p>Simple select boxes (where the user can only select one item) are pretty easy to implement.</p>
+<p><img src="./Form Input Types_files/select-box-form-input.png" alt="select-boxes-form-input-type"></p>
+<p>This goes inside the form in your html:</p>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"beverage"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option&gt;</span><span class="pln">Coffee</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option&gt;</span><span class="pln">Tea</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option&gt;</span><span class="pln">Kombucha</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option&gt;</span><span class="pln">Water</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+</span><span class="tag">&lt;/select&gt;</span></code></pre>
+<p>And this is one way to read out the value in your form submit event handler:</p>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> beverage </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#beverage"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<p>If you wanted to instead give each option a value different from the text the user sees, you could change your <code class="prettyprint prettyprinted" style=""><span class="kwd">select</span></code> to look like this:</p>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"beverage"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">Coffee</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">Tea</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="pln">Kombucha</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"4"</span><span class="tag">&gt;</span><span class="pln">Water</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+</span><span class="tag">&lt;/select&gt;</span></code></pre>
+<p>Now when you gather the input with <code class="prettyprint prettyprinted" style=""><span class="pln">$</span><span class="pun">(</span><span class="str">"#beverage"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">()</span></code> you'll get "1", "2", "3" or "4". Note that they still come in as strings, so in this case you would probably want to use <code class="prettyprint prettyprinted" style=""><span class="pln">parseInt</span><span class="pun">()</span></code> to convert the inputted data to a number.</p>
+<h2>Radio Buttons</h2>
+<p>Radio buttons allow the user to select one and only one option from a list.</p>
+<p><img src="./Form Input Types_files/radio-button-form-input.png" alt="form-input-types-radio-buttons"></p>
+<p>Here's an example of doing radio buttons (this would go inside the form in your html):</p>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"chocolate"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span><span class="pln">
+    Chocolate
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"vanilla"</span><span class="tag">&gt;</span><span class="pln">
+    Vanilla
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"cookiesandcream"</span><span class="tag">&gt;</span><span class="pln">
+    Cookies &amp; Cream
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<p>And a way to read the value selected:</p>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> flavor </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"input:radio[name=flavor]:checked"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h2>Checkboxes</h2>
+<p>Checkboxes work similarly to radio buttons, but allow users to select multiple options. Because we want to be able to collect <em>all</em> of a user's selections, we will first need to learn about something called an <em>array</em>, which we will do next week. In its simplest form, an array is simply a list of multiple items packaged together.</p>
+<h2>Date</h2>
+<p>The date input type provides an easier interface for users to browse, select, and input dates:</p>
+<p><img src="./Form Input Types_files/date-select-form-input.png" alt="form-input-type-date-picker"></p>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"born"</span><span class="tag">&gt;</span><span class="pln">Date of birth:</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"born"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"date"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> dob </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#born"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h2>Color</h2>
+<p>You may not have seen this one before! The color form input type, when clicked, opens a special panel where users can fine-tune and select specific colors:</p>
+<p><img src="./Form Input Types_files/color-select-form-input.png" alt="form-input-type-color-selector"></p>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"color"</span><span class="tag">&gt;</span><span class="pln">What is your favorite color?</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"color"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"color"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> favoriteColor </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#color"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+</div>
+<div class="tab-pane" id="cheat-sheet">
+<h2>Examples</h2>
+<p></p><hr><p></p>
+<h3>Select Boxes</h3>
+<p><img src="./Form Input Types_files/select-box-form-input.png" alt="select-boxes-form-input-type"></p>
+<h4>HTML</h4>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"beverage"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"coffee"</span><span class="tag">&gt;</span><span class="pln">Coffee</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"tea"</span><span class="tag">&gt;</span><span class="pln">Tea</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"kombucha"</span><span class="tag">&gt;</span><span class="pln">Kombucha</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"water"</span><span class="tag">&gt;</span><span class="pln">Water</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+</span><span class="tag">&lt;/select&gt;</span></code></pre>
+<h4>JavaScript</h4>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> beverage </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#beverage"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h3>Radio Buttons</h3>
+<p><img src="./Form Input Types_files/radio-button-form-input.png" alt="form-input-types-radio-buttons"></p>
+<h4>HTML</h4>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"chocolate"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span><span class="pln">
+    Chocolate
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"vanilla"</span><span class="tag">&gt;</span><span class="pln">
+    Vanilla
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"flavor"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"cookiesandcream"</span><span class="tag">&gt;</span><span class="pln">
+    Cookies &amp; Cream
+  </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<h4>JavaScript</h4>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> flavor </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"input:radio[name=flavor]:checked"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h3>Date Picker</h3>
+<p><img src="./Form Input Types_files/date-select-form-input.png" alt="form-input-type-date-picker"></p>
+<h4>HTML</h4>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"born"</span><span class="tag">&gt;</span><span class="pln">Date of birth:</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"born"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"date"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> dob </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#born"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h3>Color Picker</h3>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"color"</span><span class="tag">&gt;</span><span class="pln">What is your favorite color?</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"color"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"color"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<h4>JavaScript</h4>
+<pre><code class="prettyprint lang-javascript prettyprinted" style=""><span class="kwd">var</span><span class="pln"> favoriteColor </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#color"</span><span class="pun">).</span><span class="pln">val</span><span class="pun">();</span></code></pre>
+<h2>Tips</h2>
+<p></p><hr><p></p>
+<ul>
+<li>Marking your HTML input field as <em>number</em>, <em>date</em>, or <em>tel</em>, doesn't mean it will automatically be a JavaScript <strong>number</strong> type. <code class="prettyprint prettyprinted" style=""><span class="pln">type</span><span class="pun">=</span><span class="str">"number"</span></code> just means that the form field will only accept number values. But when you use <code class="prettyprint prettyprinted" style=""><span class="pun">.</span><span class="pln">val</span><span class="pun">()</span></code> to read the input, it will still come in as a JavaScript <em>string</em>, not a <em>number</em>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/tracks">Tracks</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed/practice-calculator-user-interface">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/javascript-jquery-20c6bbb1-551d-4d45-b751-b7c886943eed/practice-form-input-types-fe02cac2-596a-4881-b6dc-c3fe0ec18b2d">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<button name="button" type="submit" class="btn btn-info" id="lesson-search">
+<span class="glyphicon glyphicon-search"></span>
+</button> </div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<a href="http://www.epicodus.com/" target="_blank"><img id="epicodus-logo" src="./Form Input Types_files/saved_resource" title="Learn to program at Epicodus" alt="Learn to program at Epicodus"></a>
+<p>© 2020 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+
+<script type="text/javascript">
+      var _usersnapconfig = { loadHandler: function() {UserSnap.on('beforeSend', function(obj) { obj.label = "Intro to Programming (Evening)"; }) } };
+      (function() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = '//api.usersnap.com/load/aa1422f9-9ca9-4942-8b1c-830007020e3d.js';
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+    </script>
+
+
+
+<!--uspssb--><iframe src="./Form Input Types_files/saved_resource.html" name="us-entrypoint-setup" style="display: none; height: 0px; width: 0px; z-index: 2147483647;"></iframe><!--uspsse--><!--uspssb--><iframe src="./Form Input Types_files/saved_resource(1).html" name="us-entrypoint-button" class="us–style-manager-1buttonIframe1581652651330 us–style-manager-2sizedIframe1581652651330" id="us–style-manager-1buttonIframe1581652651330" style="display: none; height: 0px; width: 0px; z-index: 2147483647;"></iframe><!--uspsse--><style type="text/css"></style><style type="text/css"></style></body></html>
